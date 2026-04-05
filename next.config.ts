@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   // Uncomment below if deploying as standalone under /crm path
   // basePath: '/crm',
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "photos.zillowstatic.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
